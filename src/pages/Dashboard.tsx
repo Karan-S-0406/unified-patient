@@ -16,7 +16,6 @@ export default function Dashboard() {
   const latestVisit = visits[0];
 
   const quickActions = [
-    { label: "Schedule Follow-Up", icon: CalendarPlus, path: "/schedule" },
     { label: "View Visits", icon: Calendar, path: "/visits" },
     { label: "View Medications", icon: Pill, path: "/medications" },
     { label: "Update Insurance", icon: CreditCard, path: "/billing" },
