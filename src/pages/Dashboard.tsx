@@ -31,15 +31,6 @@ export default function Dashboard() {
           <p className="text-sm text-muted-foreground mt-1">{patient.facility} • MRN: {patient.mrn}</p>
         </div>
 
-        {/* Alert banner */}
-        <div className="bg-warning/10 border border-warning/20 rounded-[12px] p-4 flex items-start gap-3">
-          <AlertCircle className="w-5 h-5 text-warning mt-0.5 shrink-0" />
-          <div className="flex-1">
-            <p className="text-sm font-medium text-foreground">Follow-up appointment due</p>
-            <p className="text-xs text-muted-foreground mt-0.5">You have a cardiology follow-up due by March 19, 2026 from your recent Emergency Visit.</p>
-          </div>
-          <Button size="sm" onClick={() => navigate("/schedule")}>Schedule Now</Button>
-        </div>
 
         {/* Quick actions */}
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
