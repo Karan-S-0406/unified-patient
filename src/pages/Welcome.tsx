@@ -38,7 +38,7 @@ export default function Welcome() {
             EPOWERdoc Health System
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground tracking-tight leading-tight mb-4">
-            Secure Patient Access for Registration, Visits, and Follow-Up Care
+            Secure Patient Access for Registration, Visits, and Walk-In Care
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
             Register online, review your visits and medications, manage insurance, access discharge information, and schedule follow-up appointments — all in one secure portal.
