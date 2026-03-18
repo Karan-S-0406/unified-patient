@@ -9,7 +9,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Visits from "./pages/Visits";
 import VisitDetails from "./pages/VisitDetails";
-import ScheduleFollowUp from "./pages/ScheduleFollowUp";
+
 import Medications from "./pages/Medications";
 import BillingInsurance from "./pages/BillingInsurance";
 import Messages from "./pages/Messages";
