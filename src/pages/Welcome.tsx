@@ -4,7 +4,7 @@ import { Shield, ClipboardCheck, Calendar, FileText, Lock, Heart } from "lucide-
 
 const features = [
   { icon: ClipboardCheck, title: "Secure Registration", description: "Complete your patient registration digitally before your visit. Your information is encrypted and HIPAA-compliant." },
-  { icon: Calendar, title: "Easy Visit Management", description: "View upcoming and past visits, access discharge instructions, and schedule follow-up appointments." },
+  { icon: Calendar, title: "Easy Visit Management", description: "View your past visits, access discharge instructions, and review your care history anytime." },
   { icon: FileText, title: "Access Your Records Anytime", description: "Review medications, billing statements, insurance details, and communicate with your care team." },
 ];
 
