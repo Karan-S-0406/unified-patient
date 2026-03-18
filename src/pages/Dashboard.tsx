@@ -6,8 +6,8 @@ import { Progress } from "@/components/ui/progress";
 import { useNavigate } from "react-router-dom";
 import { patient, insurance, visits, medications, billing, messages } from "@/lib/sample-data";
 import {
-  CalendarPlus, Calendar, Pill, DollarSign, MessageSquare,
-  CreditCard, AlertCircle, ArrowRight, Clock, Stethoscope, Building2
+  Calendar, Pill, DollarSign, MessageSquare,
+  CreditCard, ArrowRight, Clock, Stethoscope, Building2
 } from "lucide-react";
 
 export default function Dashboard() {
