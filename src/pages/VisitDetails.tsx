@@ -82,7 +82,6 @@ export default function VisitDetails() {
         <div className="flex flex-wrap gap-3 pt-2">
           <Button variant="outline"><Download className="w-4 h-4 mr-2" /> Download Summary</Button>
           <Button variant="outline"><FileText className="w-4 h-4 mr-2" /> Request Records</Button>
-          <Button onClick={() => navigate("/schedule")}>Schedule Follow-Up</Button>
         </div>
       </div>
     </AppShell>

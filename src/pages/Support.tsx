@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Phone, Mail, Clock, MessageCircle, Search } from "lucide-react";
 
 const faqs = [
-  { q: "How do I schedule a follow-up visit?", a: "Navigate to 'Schedule Follow-Up' from the sidebar or dashboard. Select your appointment type, provider, facility, and preferred date and time. You'll receive a confirmation once booked." },
+  { q: "Can I schedule an appointment?", a: "EPOWERdoc facilities are walk-in care centers — no appointment is needed. Simply visit any of our locations during operating hours." },
   { q: "How do I update my insurance?", a: "Go to your Profile page and select the Insurance tab. Click 'Edit Profile' to make changes. Note that insurance updates require staff review before being finalized in your record." },
   { q: "Why do I need to review consent documents?", a: "Consent documents are required by federal and state law before receiving medical care. They explain your rights, how your information is used, and your financial responsibilities." },
   { q: "How do I access discharge instructions?", a: "Go to Visits, find the relevant visit, and click 'View Details.' Discharge instructions, prescriptions, and follow-up recommendations are all available on the visit detail page." },
