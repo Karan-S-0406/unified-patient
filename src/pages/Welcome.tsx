@@ -41,7 +41,7 @@ export default function Welcome() {
             Secure Patient Access for Registration, Visits, and Walk-In Care
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            Register online, review your visits and medications, manage insurance, access discharge information, and schedule follow-up appointments — all in one secure portal.
+            Register online, review your visits and medications, manage insurance, and access discharge information — all in one secure portal. No appointment needed — walk in anytime.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button size="lg" className="min-h-[48px] px-8 text-base" onClick={() => navigate("/register")}>

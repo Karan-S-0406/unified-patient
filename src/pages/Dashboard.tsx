@@ -170,9 +170,9 @@ export default function Dashboard() {
           <SectionCard title="Next Steps">
             <div className="space-y-3">
               {[
-                { label: "Schedule cardiology follow-up", due: "Due by March 19", urgent: true },
                 { label: "Review updated HIPAA notice", due: "New document available", urgent: false },
                 { label: "Pay outstanding balance", due: "$847.50 due", urgent: false },
+                { label: "Update emergency contact", due: "Verify your information", urgent: false },
               ].map((t, i) => (
                 <div key={i} className="flex items-center gap-3 py-2 border-b border-border last:border-0">
                   <div className={`w-2 h-2 rounded-full shrink-0 ${t.urgent ? "bg-warning" : "bg-border"}`} />

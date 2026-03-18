@@ -42,9 +42,6 @@ export default function RegistrationComplete() {
           <Button size="lg" className="min-h-[48px] px-8" onClick={() => navigate("/dashboard")}>
             Go to Dashboard
           </Button>
-          <Button size="lg" variant="outline" className="min-h-[48px] px-8" onClick={() => navigate("/schedule")}>
-            Schedule Follow-Up
-          </Button>
         </div>
       </div>
     </div>
