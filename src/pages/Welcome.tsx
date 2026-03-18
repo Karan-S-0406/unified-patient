@@ -4,7 +4,7 @@ import { Shield, ClipboardCheck, Calendar, FileText, Lock, Heart } from "lucide-
 
 const features = [
   { icon: ClipboardCheck, title: "Secure Registration", description: "Complete your patient registration digitally before your visit. Your information is encrypted and HIPAA-compliant." },
-  { icon: Calendar, title: "Easy Visit Management", description: "View upcoming and past visits, access discharge instructions, and schedule follow-up appointments." },
+  { icon: Calendar, title: "Easy Visit Management", description: "View your past visits, access discharge instructions, and review your care history anytime." },
   { icon: FileText, title: "Access Your Records Anytime", description: "Review medications, billing statements, insurance details, and communicate with your care team." },
 ];
 
@@ -38,10 +38,10 @@ export default function Welcome() {
             EPOWERdoc Health System
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-foreground tracking-tight leading-tight mb-4">
-            Secure Patient Access for Registration, Visits, and Follow-Up Care
+            Secure Patient Access for Registration, Visits, and Walk-In Care
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            Register online, review your visits and medications, manage insurance, access discharge information, and schedule follow-up appointments — all in one secure portal.
+            Register online, review your visits and medications, manage insurance, and access discharge information — all in one secure portal. No appointment needed — walk in anytime.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button size="lg" className="min-h-[48px] px-8 text-base" onClick={() => navigate("/register")}>

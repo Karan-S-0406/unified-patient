@@ -6,8 +6,8 @@ import { Progress } from "@/components/ui/progress";
 import { useNavigate } from "react-router-dom";
 import { patient, insurance, visits, medications, billing, messages } from "@/lib/sample-data";
 import {
-  CalendarPlus, Calendar, Pill, DollarSign, MessageSquare,
-  CreditCard, AlertCircle, ArrowRight, Clock, Stethoscope, Building2
+  Calendar, Pill, DollarSign, MessageSquare,
+  CreditCard, ArrowRight, Clock, Stethoscope, Building2
 } from "lucide-react";
 
 export default function Dashboard() {
@@ -16,7 +16,6 @@ export default function Dashboard() {
   const latestVisit = visits[0];
 
   const quickActions = [
-    { label: "Schedule Follow-Up", icon: CalendarPlus, path: "/schedule" },
     { label: "View Visits", icon: Calendar, path: "/visits" },
     { label: "View Medications", icon: Pill, path: "/medications" },
     { label: "Update Insurance", icon: CreditCard, path: "/billing" },
@@ -32,18 +31,9 @@ export default function Dashboard() {
           <p className="text-sm text-muted-foreground mt-1">{patient.facility} • MRN: {patient.mrn}</p>
         </div>
 
-        {/* Alert banner */}
-        <div className="bg-warning/10 border border-warning/20 rounded-[12px] p-4 flex items-start gap-3">
-          <AlertCircle className="w-5 h-5 text-warning mt-0.5 shrink-0" />
-          <div className="flex-1">
-            <p className="text-sm font-medium text-foreground">Follow-up appointment due</p>
-            <p className="text-xs text-muted-foreground mt-0.5">You have a cardiology follow-up due by March 19, 2026 from your recent Emergency Visit.</p>
-          </div>
-          <Button size="sm" onClick={() => navigate("/schedule")}>Schedule Now</Button>
-        </div>
 
         {/* Quick actions */}
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
           {quickActions.map(a => (
             <button
               key={a.path}
@@ -180,9 +170,9 @@ export default function Dashboard() {
           <SectionCard title="Next Steps">
             <div className="space-y-3">
               {[
-                { label: "Schedule cardiology follow-up", due: "Due by March 19", urgent: true },
                 { label: "Review updated HIPAA notice", due: "New document available", urgent: false },
                 { label: "Pay outstanding balance", due: "$847.50 due", urgent: false },
+                { label: "Update emergency contact", due: "Verify your information", urgent: false },
               ].map((t, i) => (
                 <div key={i} className="flex items-center gap-3 py-2 border-b border-border last:border-0">
                   <div className={`w-2 h-2 rounded-full shrink-0 ${t.urgent ? "bg-warning" : "bg-border"}`} />

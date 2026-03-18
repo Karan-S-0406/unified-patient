@@ -9,7 +9,7 @@ import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Visits from "./pages/Visits";
 import VisitDetails from "./pages/VisitDetails";
-import ScheduleFollowUp from "./pages/ScheduleFollowUp";
+
 import Medications from "./pages/Medications";
 import BillingInsurance from "./pages/BillingInsurance";
 import Messages from "./pages/Messages";
@@ -32,7 +32,7 @@ const App = () => (
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/visits" element={<Visits />} />
           <Route path="/visits/:id" element={<VisitDetails />} />
-          <Route path="/schedule" element={<ScheduleFollowUp />} />
+          
           <Route path="/medications" element={<Medications />} />
           <Route path="/billing" element={<BillingInsurance />} />
           <Route path="/messages" element={<Messages />} />

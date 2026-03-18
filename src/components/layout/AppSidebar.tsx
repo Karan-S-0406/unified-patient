@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import {
-  LayoutDashboard, Calendar, CalendarPlus, Pill, DollarSign,
+  LayoutDashboard, Calendar, Pill, DollarSign,
   MessageSquare, User, LifeBuoy, LogOut, X, Stethoscope
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -9,7 +9,6 @@ import { Button } from "@/components/ui/button";
 const navItems = [
   { label: "Dashboard", icon: LayoutDashboard, path: "/dashboard" },
   { label: "Visits", icon: Calendar, path: "/visits" },
-  { label: "Schedule Follow-Up", icon: CalendarPlus, path: "/schedule" },
   { label: "Medications", icon: Pill, path: "/medications" },
   { label: "Billing & Insurance", icon: DollarSign, path: "/billing" },
   { label: "Messages", icon: MessageSquare, path: "/messages", badge: 2 },
